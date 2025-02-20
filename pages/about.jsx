@@ -4,8 +4,11 @@ export default function About() {
   return (
     <div>
       <Head>
-        <title>About page</title>
-        <meta name="description" content="About page description" />
+        <title>About Us</title>
+        <meta
+          name="description"
+          content="Learn more about us on the About page."
+        />
         <meta
           property="og:image"
           content="https://media.istockphoto.com/id/1400739452/vector/about-us-web-header-design-icon-interconnected-symbol-of-company-profile-corporate.jpg?s=612x612&w=0&k=20&c=-zgp-xnEqh8zBEjNajlPZmDF5PXuqlXVUu7RjBf_UGU="
