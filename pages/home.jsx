@@ -35,10 +35,10 @@ export default function Home({ headContent }) {
     <>
       {/* Head section with dynamic content */}
       <Head>
-        <title>{headContent.title || "Default Title"}</title>
+        <title>Welcome to the Home Page</title>
         <meta
           name="description"
-          content={headContent.description || "Default description"}
+          content="This is the home page description. Learn more about us."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta

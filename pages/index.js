@@ -28,11 +28,8 @@ export default function Home({ headContent }) {
     <>
       {/* Head section with dynamic content */}
       <Head>
-        <title>{headContent.title || "Default Title"}</title>
-        <meta
-          name="description"
-          content={headContent.description || "Default description"}
-        />
+        <title>Coffeeweb</title>
+        <meta name="description" content="Connect with coffee" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           property="og:image"
