@@ -1,28 +1,35 @@
+// export default function Home() {
+//   return (
+//     <div>
+//       <h1>Home Page</h1>
+//     </div>
+//   );
+// }
+
 import Head from "next/head";
 import Image from "next/image";
-import { Geist, Geist_Mono } from "next/font/google";
+// import { Geist, Geist_Mono } from "next/font/google";
 import styles from "@/styles/Home.module.css";
-import Link from "next/link";
-
-// Load Google fonts using Next.js font optimization
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"]
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"]
-});
-
-// Handle click event
-const handleClick = () => {
-  console.log("test");
-};
 
 // Home component with dynamic head content
 export default function Home({ headContent }) {
   console.log(headContent);
+
+  // Load Google fonts using Next.js font optimization
+  // const geistSans = Geist({
+  //   variable: "--font-geist-sans",
+  //   subsets: ["latin"]
+  // });
+
+  // const geistMono = Geist_Mono({
+  //   variable: "--font-geist-mono",
+  //   subsets: ["latin"]
+  // });
+
+  // Handle click event
+  const handleClick = () => {
+    console.log("test");
+  };
 
   return (
     <>
@@ -36,14 +43,14 @@ export default function Home({ headContent }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           property="og:image"
-          content="https://sample-videos.com/img/Sample-png-image-100kb.png"
+          content="https://cdn.pixabay.com/photo/2016/02/08/11/24/homepage-1186348_1280.jpg"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       {/* Main content */}
       <div
-        className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}
+      // className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}
       >
         <main className={styles.main}>
           <Image
@@ -133,8 +140,6 @@ export default function Home({ headContent }) {
             />
             Go to nextjs.org →
           </a>
-          <Link href="/home">Home</Link>
-          <Link href="/about">About</Link>
         </footer>
       </div>
     </>
